@@ -54,7 +54,9 @@ class TicketManager {
 const miManager = new TicketManager();
 
 miManager.agregarEvento("Evento 1", "Argentina", 50000);
+miManager.agregarEvento("Evento 2", 'Brasil', 42000);
+miManager.agregarUsuario(1, 122);
 miManager.agregarUsuario(2, 123);
-miManager.agregarUsuario(2, 123);
-miManager.ponerEventoEnGira(2, "Brasil", new Date());
+miManager.ponerEventoEnGira(10, "Argentina", new Date());
+miManager.ponerEventoEnGira(11, "Brasil", new Date());
 console.log(miManager.getEvento());
